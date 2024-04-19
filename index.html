@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前期中間テスト 情報対策</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form name="myTest">
+        <u>
+            <div id="page_top"></div>
+            <h1>前期中間テスト <br>情報3対策サイト</h1>
+        </u>
+        <p>最終更新日:<time id="modify"></time></p>
+        <br>
+        <input type="button" value="全て隠す" onclick="checkCLEAR()">
+        <input type="button" value="全て表示" onclick="checkALL()">
+        <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+    
+        <br>
+    
+        <li>以下のリンクをクリックすると問題のページまで飛びます。</li>
+        <li>Iコースの学生複数名で確認を行っていますが，間違いがあれば教えて下さい。</li>
+        <p>過去の問題はこちら↓↓↓↓↓</p>
+        <p>※別サイトへ移動します。</p>
+        <a href="https://s-ao213.github.io/information2/question1.html">2023前期中間の問題</a>
+        <br>
+        <a href="https://s-ao213.github.io/information/question.html">2023前期末の問題</a>
+
+        <u>
+            <h3 id="index">目次</h3>
+        </u>
+        
+        <u>
+            <h4>講義ノート一覧</h4>
+        </u>
+        <ul>
+            <li><a href="#note1">講義ノート第1回</a></li>
+            <li><a href="#note2">講義ノート第2回</a></li>
+            <li><a href="#note3">講義ノート第3回</a></li>
+            <li><a href="#note4">講義ノート第4回</a></li>
+            <li><a href="#note5">講義ノート第5回</a></li>
+            <li><a href="#note6">講義ノート第6回</a></li>
+            <li><a href="#note7">講義ノート第7回</a></li>
+    
+            <!-- <li><a href="#note">講義ノート第回</a></li> -->
+        </ul>
+    
+<!--         <u> -->
+            <!-- <h4>小テスト</h4>
+        </u>
+        <ul>
+            <li><a href="#testA">小テストの範囲</a></li>
+            <li><a href="#test1">小テスト第1回</a></li>
+            <li><a href="#test22">小テスト第2回</a></li>
+            <li><a href="#test3">小テスト第3回</a></li>-->
+    <!-- <li><a href="#test">小テスト第回</a></li> -->
+<!--         </ul> -->
+
+        <!-- <section>
+            <u>
+                <h2 id="note">講義ノート第回</h2>
+                <p><a href="#index">目次に戻る</a></p>
+            </u>
+        </section> -->
+
+        <!-- <li></li>
+        <p><span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span></p> -->
+
+        <section>
+            <u>
+                <h2 id="note1">講義ノート第1回</h2>
+                <p><a href="#index">目次に戻る</a></p>
+            </u>
+
+            <li>ChatGPT が一般公開された時期はいつか。次の選択肢から記号で答えよ。</li>
+            <p>① 2021 年 6 月　② 2022 年 11 月 　③ 2023 年 1 月 　④ 2024 年 8 月</p>
+            <p><span id="test"><input type="checkbox" id="blank1"><label for="blank1">　② 2022 年 11 月　</label></span></p>
+
+            <li>ChatGPT を開発した企業はどこか。次の選択肢から記号で答えよ。</li>
+            <p>①Facebook AI Research 　② DeepMind 　③ OpenAI 　④ IBM Watson</p>
+            <p><span id="test"><input type="checkbox" id="blank2"><label for="blank2">　③ OpenAI 　</label></span></p>
+
+            <li>生成 AI（あるいは生成系 AI、生成型 AI）は何という単語を和訳したものか。次の選択肢から記号で答えよ。</li>
+            <p>①Generative AI 　② Constructive AI 　③ Productive AI　 ④ Creative AI</p>
+            <p><span id="test"><input type="checkbox" id="blank3"><label for="blank3">　①Generative AI　</label></span></p>
+
+            <li>公大高専の教職員に付与されるメールアドレスのドメインを答えよ（アットマークを含めて答えること）。</li>
+            <p><span id="test"><input type="checkbox" id="blank4"><label for="blank4">　@omu.ac.jp　</label></span></p>
+
+            <li>公大高専の学生に付与されるメールアドレスのドメインを答えよ（アットマークを含めて答えること）。</li>
+            <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　@st.omu.ac.jp　</label></span></p>
+
+            <li>
+                次のうち、クラウドストレージサービスとは言えないもの（主にデータ保存以外の目的で設計されていないもの）をすべて選び、記号で答えよ。
+                <br>
+                ※ここでのクラウドストレージサービスは、一般的にファイルやデータを保存・共有・アクセスのためのプラットフォームを指し、コードのバージョン管理やストリーミングなど、特定の目的に特化したサービスは除外されます。
+            </li>
+            <p>①Google Drive 　② Dropbox　 ③ OneDrive 　④ Docker 　⑤ iCloud　⑥ Amazon S3 　⑦ Amazon EC2 　⑧ GitHub 　⑧ Slack 　⑨ Apache Hadoop</p>
+            <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　①Google Drive 　② Dropbox　 ③ OneDrive 　⑤ iCloud　⑥ Amazon S3　</label></span></p>
+
+            <li>OneDrive は Windows のさまざまな機能と統合されていますが、特に密接に連携している機能（統合度が高い機能）は何か。次の選択肢から記号で答えよ。</li>
+            <p>①Cortana　②Windows Defender 　③エクスプローラ　④タスクマネージャ</p>
+            <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　③エクスプローラ　</label></span></p>
+
+            <li>SSO（シングルサインオン）に関する説明として、最も適切なものはどれか。次の選択肢から記号で答えよ。</li>
+            <p>① SSO はユーザーが異なるサービスにログインするたびに異なるパスワードを設定することを要求するセキュリティプロトコルである。</p>
+            <p>② SSO を利用すると、ユーザーは一度の認証で複数の関連サービスやアプリケーションにアクセスできるようになる。</p>
+            <p>③ SSO は、各サービスでユーザーが異なるユーザー名を使用することを可能にする技術である。</p>
+            <p>④ SSO は、セッションごとにユーザーが異なる認証方法を選択することを要求する技術である。</p>
+            <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　②　</label></span></p>
+
+            <li>ChatGPT の GPT は何の略語か。次の選択肢から記号で答えよ。</li>
+            <p>① Generative Programming Technology </p>
+            <p>② Generative Pre-trained Transformer</p>
+            <p>③ Global Processing Theorem</p>
+            <p>④ Generative Predictive Training</p>
+            <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　② Generative Pre-trained Transformer　</label></span></p>
+
+            <li>機械学習の文脈で登場する NLP という語は何の略語か。次の選択肢から記号で答えよ。</li>
+            <p>① Natural Language Processing</p>
+            <p>② Neural Learning Protocol</p>
+            <p>③ Network Layer Protocol</p>
+            <p>④ Nonlinear Programming</p>
+            <p><span id="test"><input type="checkbox" id="blank10"><label for="blank10">　① Natural Language Processing　</label></span></p>
+
+            <li>機械学習の文脈で登場する NLP を日本語で表現すると何になるか。漢字 6 文字で答えよ。</li>
+            <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　自然言語処理　</label></span></p>
+
+            <li>コンピュータサイエンスの文脈で登場する AI という語は何の略語か。次の選択肢から記号で答えよ。</li>
+            <p>① Artificial Intelligence</p>
+            <p>② Advanced Informatics</p>
+            <p>③ Automated Interactions</p>
+            <p>④ Algorithmic Interpretation</p>
+            <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　① Artificial Intelligence　</label></span></p>
+
+            <li>深層学習モデルである「GPT」に関する説明として不適切なものを次の選択肢から記号で 2つ答えよ。</li>
+            <p>① 大量のテキストデータから学習することで、文脈に基づいたテキスト生成が可能なモデルである。</p>
+            <p>② リアルタイムでの音声認識と翻訳を主な目的として設計されている。</p>
+            <p>③ 複数の言語をサポートする多言語モデルである。</p>
+            <p>④ 主に静止画の解析と認識に用いられる深層学習モデルである。</p>
+            <p>⑤ 与えられたテキストに基づいて新しいテキストを生成することができる。</p>
+            <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　②・④　</label></span></p>
+
+            <li>生成 AI は、架空の情報や誤った情報を生成することがある。この現象を何というか。</li>
+            <p>① プラジャリズム　② オーバーフィッティング　③ ハルシネーション　④ ハングアップ</p>
+            <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　③ ハルシネーション　</label></span></p>
+
+            <li>テキストや画像などの生成 AI において、利用者が入力する「文」または「指示」を何とよぶか。カタカナ 5 文字で答えよ。</li>
+            <p><span id="test"><input type="checkbox" id="blank15"><label for="blank15">　プロンプト　</label></span></p>
+
+            <li>大阪公立大学の「生成 AI の利活用に関する学生向けガイドライン」では基本指針として、○○○○○○性に反する利用を禁止している。○○○○○○にあてはまる語を漢字 5 文字で答えよ。</li>
+            <p><span id="test"><input type="checkbox" id="blank16"><label for="blank16">　学問的誠実　</label></span></p>
+        </section>
+
+
+
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </form>
+</body>
+</html>
