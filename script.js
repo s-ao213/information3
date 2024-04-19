@@ -10,6 +10,14 @@ function checkCLEAR()
         }
     }
 }
+/* 更新日の取得 */
+const last = new Date(document.lastModified);
+const year = last.getFullYear();
+const month = last.getMonth() + 1;
+const date = last.getDate();
+/* 日付を書き換える */
+const target = document.getElementById('modify');
+target.textContent = year + '-' + month + '-' + date;
 
 // チェックボックスのチェックをする関数。HTMLファイルで設定した関数名と一致させる
 function checkALL()
@@ -41,12 +49,3 @@ greyButton.addEventListener('click', function() {
     body.classList.remove('white-bg');
     body.classList.add('grey-bg');
 });
-
-/* 更新日の取得 */
-const last = new Date(document.lastModified);
-const year = last.getFullYear();
-const month = last.getMonth() + 1;
-const date = last.getDate();
-/* 日付を書き換える */
-const target = document.getElementById('modify');
-target.textContent = year + '-' + month + '-' + date;
