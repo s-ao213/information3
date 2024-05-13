@@ -450,7 +450,7 @@
         <li>機械学習に基づく AI はどのように機能するか。最も適切なものを記号で答えよ。</li>
         <p>① 過去のデータに基づいて将来のイベントを正確に予測する。</p>
         <p>② 利用者の指示に基づいて具体的なタスク（作業や処理）を学習する。</p>
-        <p>② 利用者の指示に基づいて具体的なタスク（作業や処理）を学習する。</p>
+        <p>③ 事前にプログラムされたルールに従ってタスク（作業や処理）を実行する。</p>
         <p>④ 大量のデータからパターンや関連性を学習し、それを基に予測や判断を行う。</p>
         <p><span id="test"><input type="checkbox" id="blank56"><label for="blank56">　④　</label></span></p>
 
@@ -584,10 +584,10 @@
         <p><span id="test"><input type="checkbox" id="blank80"><label for="blank80">　①　⑦　</label></span></p>
 
         <li>教師なし学習の「次元削減（情報圧縮）」の主な目的はどれか。最も適切なものを選択して記号で答えよ。</li>
-        <p>① ニューラルネットワークは分類タスクにのみ適用可能であり、回帰やレコメンデーションシステムには使用されない。</p>
-        <p>② ニューラルネットワークはパラメータの数が少なく、比較的短時間で学習が完了する。</p>
-        <p>③ ニューラルネットワークは、適切な設定と学習を行うことで高い汎用性と性能を発揮するが、多くのパラメータ設定と計算資源を必要とする。</p>
-        <p>④ ニューラルネットワークは、主にロジスティック回帰の学習アルゴリズムに基づいて構築される。</p>
+        <p>① データセットに含まれる外れ値の検出</p>
+        <p>② データセットの拡張や水増し</p>
+        <p>③ データセットの可視化と容易化</p>
+        <p>④ データセットに含まれるノイズの平滑化</p>
         <p><span id="test"><input type="checkbox" id="blank81"><label for="blank81">　③　</label></span></p>
 
         <li>機械学習分野の強化学習における「エージェント」とはなにか。最も適切なものを記号で答えよ。</li>
@@ -603,7 +603,188 @@
             <h2 id="note4">講義ノート第4回</h2>
             <p><a href="#index">目次に戻る</a></p>
         </u>
-        <p>制作中</p>
+
+        <li>生理学的なニューラルネットワークにおける「ニューロンによる信号伝達」に関する説明として最も適切なものはどれか。記号で答えよ。</li>
+        <p>① ニューロンは、隣接するニューロンから励起性の信号を受け取ると発火し、抑制性の信号を受け取ると発火が中止される。</p>
+        <p>② ニューロンは、隣接するニューロンから信号を受け取ると約 10ms 以内に発火する。</p>
+        <p>③ ニューロンは、隣接するニューロンから信号を受け取ると累積的に電位が変化し、その電位が閾値を超えると発火する。</p>
+        <p>④ ニューロンは、隣接する全てのニューロンから信号を受け取ったとき発火する。</p>
+        <p>⑤ ニューロンは、隣接するいずれかのニューロンから信号を受け取ったとき発火する。</p>
+        <p><span id="test"><input type="checkbox" id="blank84"><label for="blank84">　③　</label></span></p>
+
+        <li>生理学的なニューラルネットワークの構造に関する説明として最も適切なものはどれか。記号で答えよ。</li>
+        <p>① ニューロンは基本的に 1 対 1 で双方向に接続されている。</p>
+        <p>② ニューロンは基本的に 1 対 1 で単方向に接続されている。</p>
+        <p>③ ニューロンは基本的に複数のニューロンと単方向で接続されている。</p>
+        <p>④ ニューロンは基本的に複数のニューロンと双方向で接続されている。</p>
+        <p><span id="test"><input type="checkbox" id="blank85"><label for="blank85">　③　</label></span></p>
+
+        <li>生理学的なニューラルネットワークにおける信号伝達に関して正しい説明はどれか。最も適切なものを選び記号で答えよ。</li>
+        <p>① あるニューロンから他のニューロンに伝達される信号の強度は常に均一である。</p>
+        <p>② あるニューロンから他のニューロンに伝達される信号のタイプ（励起性 or 抑制性）は常に同じである。</p>
+        <p>③ ニューロンは受け取ったすべての信号を同じ強度で隣接するニューロンに伝える。</p>
+        <p>④ ニューロンは励起性の信号を受け取ると電位が上がり、抑制性の信号を受け取ると電位が下がる。</p>
+        <p>⑤ ニューロンは発火しているときに励起性の信号を伝え、そうでないときに抑制性の信号を伝える。</p>
+        <p><span id="test"><input type="checkbox" id="blank86"><label for="blank86">　④　</label></span></p>
+
+        <li>ニューラルネットワークの文脈において MLP とは何の略語か。最も適切なものを選び記号で答えよ。</li>
+        <p>① Modern Learning Protocol</p>
+        <p>② Multi-Layer Perceptron</p>
+        <p>③ Multiple Linear Programs</p>
+        <p>④ Memory Layer Protocol</p>
+        <p><span id="test"><input type="checkbox" id="blank87"><label for="blank87">　②　</label></span></p>
+
+        <li>ChatGPT の基盤となる Transformer モデルが使用する特徴的なメカニズム（機構）はどれか。最も適切なものを選び記号で答えよ。</li>
+        <p>① Self-Attention</p>
+        <p>② Recurrent Units</p>
+        <p>③ Gate Layers</p>
+        <p>④ Perceptron Relays</p>
+        <p><span id="test"><input type="checkbox" id="blank88"><label for="blank88">　①　</label></span></p>
+
+        <li>次のうち、ディープラーニング（深層学習）には属さないモデルはどれか。最も適切なものを選び記号で答えよ。</li>
+        <p>① MLP ② CNN ③ SVM ④ RNN ⑤ LSTM ⑥ Transformer</p>
+        <p><span id="test"><input type="checkbox" id="blank89"><label for="blank89">　③　</label></span></p>
+
+        <li>畳み込みニューラルネットワークが得意とする領域（タスク）はどれか。最も適切なものを選び記号で答えよ。</li>
+        <p>① シーケンスデータの処理 </p>
+        <p>② 画像データの処理</p>
+        <p>③ 文章（テキストデータ）の処理</p>
+        <p>④ 動画データの処理</p>
+        <p>⑤ 非構造化データの処理 </p>
+        <p><span id="test"><input type="checkbox" id="blank90"><label for="blank90">　②　</label></span></p>
+
+        <li>次のうち、「音声認識」に最も適するニューラルネットワークモデルはどれか。また「画像認識」に最も適するニューラルネットワークモデルはどれか。</li>
+        <p>① Multi-Layer Perceptron</p>
+        <p>② Convolutional Neural Network</p>
+        <p>③ Recurrent Neural Network</p>
+        <p> Generative Adversarial Network</p>
+        <p>音声認識<span id="test"><input type="checkbox" id="blank91"><label for="blank91">　③　</label></span></p>
+        <p>画像認識<span id="test"><input type="checkbox" id="blank111"><label for="blank111">　②　</label></span></p>
+
+        <li>16 × 16 ピクセルのグレースケール画像を用いて、トランプのスート（スペード／クラブ／ハート／ダイヤ）の分類をしたい。MLP でモデルを構成するにあたり、「入力層」には何個のニューロンを配置すべきか答えよ。また「出力層」には何個のニューロンを配置すべきか答えよ。</li>
+        <p>入力層<span id="test"><input type="checkbox" id="blank92"><label for="blank92">　256　</label></span></p>
+        <p>出力層<span id="test"><input type="checkbox" id="blank112"><label for="blank112">　4　</label></span></p>
+
+        <li>50 × 50 ピクセルの衛星画像（グレースケール画像）を用いて、その地域の植生密度を 0 から100％の範囲で予測する場合、MLP でモデルを構成するにあたり、「入力層」には何個のニューロンを配置すべきか答えよ。また「出力層」には何個のニューロンを配置すべきか答えよ。</li>
+        <p>入力層<span id="test"><input type="checkbox" id="blank93"><label for="blank93">　2500　</label></span></p>
+        <p>出力層<span id="test"><input type="checkbox" id="blank113"><label for="blank113">　1　</label></span></p>
+        
+        <li>40 × 40 ピクセルの気象レーダー画像（グレースケール画像）を用いて今後 1 時間の「降水量」と「落雷発生確率」を予測したい。MLP でモデルを構成するにあたり、「入力層」には何個のニューロンを配置すべきか答えよ。また「出力層」には何個のニューロンを配置すべきか答えよ。</li>
+        <p>入力層<span id="test"><input type="checkbox" id="blank94"><label for="blank94">　1600　</label></span></p>
+        <p>出力層<span id="test"><input type="checkbox" id="blank114"><label for="blank114">　2　</label></span></p>
+
+        <li>ニューラルネットワークに対する入力（特徴量）として「気温」を用いるとき、これに推奨される前処理はどれか。最も適切なものを記号で答えよ。</li>
+        <p>① 二値化　 ② 正規化 　<br>
+            ③ 正則化 　④ One-hot エンコーディング
+        </p>
+        <p><span id="test"><input type="checkbox" id="blank95"><label for="blank95">　② 正規化　</label></span></p>
+
+        <li>次の特徴量のうち、ニューラルネットワークの入力として用いる際に One-hot エンコーディングが推奨されるものはどれか。最も適切なものを記号で答えよ。</li>
+        <p>① 血圧 ② 心拍数 ③ 血液型 
+            <br>
+            ④ 輸血経験の有無 ⑤ 生物学的な性別
+        </p>
+        <p><span id="test"><input type="checkbox" id="blank96"><label for="blank96">　③血液型　</label></span></p>
+
+        <li>ニューラルネットワークに用いる特徴量に対する前処理としての「正規化」について適切に説明しているものはどれか。最も適切なものを記号で答えよ。</li>
+        <p>① 特徴量の値をバイナリ（0 または 1）に変換する処理</p>
+        <p>② 特徴量の尺度を変更せず、データの平均を 0 にする処理</p>
+        <p>③ 特徴量から異常値（外れ値）を除去する処理</p>
+        <p>④ 特徴量の範囲を 0.0 から 1.0 にスケーリングする処理</p>
+        <p><span id="test"><input type="checkbox" id="blank97"><label for="blank97">　④　</label></span></p>
+
+        <li>ニューラルネットワークに入力する特徴量の前処理として、常に One-hot エンコーディングが推奨されるものはどれか。最も適切なものを記号で答えよ。</li>
+        <p>① 名義尺度に属する情報</p>
+        <p>② 順序尺度に属する情報</p>
+        <p>③ 間隔尺度に属する情報</p>
+        <p>④ 比例尺度に属する情報</p>
+        <p><span id="test"><input type="checkbox" id="blank98"><label for="blank98">　①　</label></span></p>
+
+        <li>MLP による深層学習に「画像」を特徴量として用いる場合、一般に必要となる前処理はどれか。最も適切なものを記号で答えよ。</li>
+        <p>
+            ① 色の反転 ② 平坦化と正規化 
+            <br>
+            ③ カラーフィルタの適用 ④ 高解像度化
+        </p>
+        <p><span id="test"><input type="checkbox" id="blank99"><label for="blank99">　②　</label></span></p>
+
+        <li>MLP による深層学習に 32×32 ピクセルのカラー画像を平坦化して用いる場合、入力層に必要なニューロンの数はいくつか。</li>
+        <p><span id="test"><input type="checkbox" id="blank100"><label for="blank100">　1024　</label></span></p>
+
+        <li>深層学習に用いる画像の前処理として RGB を HSV に変換するメリットは何か。最も適切なものを記号で答えよ。</li>
+        <p>① 画像を構成するピクセル数を減らすことができる</p>
+        <p>② 透過情報を扱うことができる</p>
+        <p>③ 画像ファイルのサイズを小さくすることができる</p>
+        <p>④ 色情報をより人間の視覚に即した形で表現できる</p>
+        <p>⑤ 画像のコントラストを高めることができる</p>
+        <p><span id="test"><input type="checkbox" id="blank101"><label for="blank101">　④　</label></span></p>
+
+        <li>画像を特徴量に用いる機械学習において、高解像の画像を使用するメリットまたはデメリットに関する説明として不適切なものはどれか。記号で 1 つ答えよ。</li>
+        <p>① 高解像度の画像は情報量が多く、物体の特徴をより精密に抽出可能なため、認識精度が向上する可能性がある。</p>
+        <p>② 高解像度の画像はファイルサイズが大きくなるため、学習に必要な計算資源や時間が増加する。</p>
+        <p>③ 高解像度の画像を使用すると画像内のノイズが強調され、モデルがノイズに過敏に反応するようになることがある。</p>
+        <p>④ 高解像度の画像は、複雑なテクスチャや細かいディテールを含むことが多いため、場合によっては過学習を引き起こす可能性がある。</p>
+        <p><span id="test"><input type="checkbox" id="blank102"><label for="blank102">　④　</label></span></p>
+
+        <li> MLP を使用した機械学習の「学習フェーズ」において、誤差逆伝播法など通じて最適化するパラメータは次のうちどれか。該当するものをすべて答えよ。</li>
+        <p>① 特徴量（入力値）</p>
+        <p>② 中間層の層数と、各中間層を構成するニューロンの数</p>
+        <p>③ 各ニューロンのバイアス</p>
+        <p>④ 各ニューロンの出力値</p>
+        <p>⑤ 各ニューロン間の重み係数</p>
+        <p>⑥ 予測値（出力値）</p>
+        <p><span id="test"><input type="checkbox" id="blank103"><label for="blank103">　③　⑤　</label></span></p>
+
+        <li>784 個のニューロンからなる入力層、16 個のニューロンからなる中間層 1、16 個のニューロ
+            ンからなる中間層 2、10 個のニューロンからなる出力層を持ち、各層が全結合されている MLP におい
+            て、学習フェーズで最適化するパラメータの数はいくつか。</li>
+        <p><span id="test"><input type="checkbox" id="blank104"><label for="blank104">　(784*16)+(16*16)+(16*10)+16+16+10=13,002　</label></span></p>
+
+        <li></li>
+        <p><span id="test"><input type="checkbox" id="blank105"><label for="blank105">　　</label></span></p>
+
+        <li>ニューラルネットワークの活性化関数として使用される ReLU 関数を表したものはどれか。また、シグモイド関数を表したものはどれか。記号で答えよ。</li>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>ReLU 関数<span id="test"><input type="checkbox" id="blank106"><label for="blank106">　①　</label></span></p>
+        <p>シグモイド関数<span id="test"><input type="checkbox" id="blank116"><label for="blank116">　④　</label></span></p>
+
+        <li>ニューラルネットワークにおける「重み係数」と「バイアス」が取りうる数値の範囲について、正しい説明をしているものはどれか。最も適切なものを記号で答えよ。</li>
+        <p>① 重み係数は 0 以上の実数のみをとる、バイアスも 0 以上の実数のみをとる。</p>
+        <p>② 重み係数もバイアスも任意の実数をとる。</p>
+        <p>③ 重み係数は 0 以上の実数のみをとるが、バイアスは任意の実数をとる。</p>
+        <p>④ 重み係数は任意の実数をとるが、バイアスは 0 以上の実数のみをとる。</p>
+        <p><span id="test"><input type="checkbox" id="blank107"><label for="blank107">　②　</label></span></p>
+
+        <li>ニューラルネットワークの学習に使用される「誤差逆伝播法」に最も関連深い数学の分野はどれか。最も適切なものを記号で答えよ。</li>
+        <p>
+            ① 確率 　② 統計　
+            <br>
+            ③ 偏微分 　④ 重積分 　
+            <br>
+            ⑤ 複素数 　⑥ 幾何学　</p>
+        <p><span id="test"><input type="checkbox" id="blank108"><label for="blank108">　③　</label></span></p>
+
+        <li>ニューラルネットワークにおける活性化関数の主たる役割はなにか。最も適切なものを記号で答えよ。</li>
+        <p>① 誤差逆伝播法を適用する際、誤差勾配を効率的に伝播させる。</p>
+        <p>② 各層の出力を正規分布に近似させる。</p>
+        <p>③ ニューラルネットワークに非線形性を導入する。</p>
+        <p>④ ニューロンの出力を特定の範囲内に収める。</p>
+        <p><span id="test"><input type="checkbox" id="blank109"><label for="blank109">　③　</label></span></p>
+
+        <li>非線形の活性化関数を使用しない MLP は、どのようなモデルと等価といえるか。最も適切なものを記号で答えよ。</li>
+        <p>① 単層ニューラルネットワーク</p>
+        <p>② 線形重回帰モデル</p>
+        <p>③ 多変量線形回帰モデル</p>
+        <p>④ 単一の線形分類器</p>
+        <p>⑤ サポートベクターマシン</p>
+        <p><span id="test"><input type="checkbox" id="blank110"><label for="blank110">　①　</label></span></p>
+
+        <li></li>
+        <p><span id="test"><input type="checkbox" id="blank116"><label for="blank116">　　</label></span></p>
+
     </section>
     </form>
     <script type="text/javascript" src="script.js"></script>
