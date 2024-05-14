@@ -87,11 +87,30 @@ tr#tl {
     background-color: #dcd6d9;
 }
 
+.photo2{
+    text-align: center;
+}
+
+.text1{
+    text-align: left;
+}
+
+
 /* スマートフォン縦 (0-480px) */
 @media only screen and (max-width: 480px) {
     body{
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .photo1{
+        width: 200px;
+        height: 160px;
+        
+    }
+
+    .suushiki{
+        font-size: 10px;
     }
 }
 
@@ -117,6 +136,11 @@ tr#tl {
         padding-left: 20%;
         padding-right: 15%;
     }
+
+    .photo1{
+        width: 750px;
+        height: 600px;
+    }
 }
 
 /* モニター等 (1280px以上) */
@@ -124,5 +148,9 @@ tr#tl {
     body{
         padding-left: 20%;
         padding-right: 15%;
+    }
+    .photo1{
+        width: 800px;
+        height: 640px;
     }
 }

@@ -12,6 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+          tex: {
+            inlineMath: [['\\(','\\)']] // インライン数式のデリミタを設定
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+      </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -735,13 +747,14 @@
         <p>⑥ 予測値（出力値）</p>
         <p><span id="test"><input type="checkbox" id="blank103"><label for="blank103">　③　⑤　</label></span></p>
 
-        <li>784 個のニューロンからなる入力層、16 個のニューロンからなる中間層 1、16 個のニューロ
-            ンからなる中間層 2、10 個のニューロンからなる出力層を持ち、各層が全結合されている MLP におい
-            て、学習フェーズで最適化するパラメータの数はいくつか。</li>
-        <p><span id="test"><input type="checkbox" id="blank104"><label for="blank104">　(784*16)+(16*16)+(16*10)+16+16+10=13,002　</label></span></p>
+        <li>784 個のニューロンからなる入力層、16 個のニューロンからなる中間層 1、16 個のニューロンからなる中間層 2、10 個のニューロンからなる出力層を持ち、各層が全結合されている MLP において、学習フェーズで最適化するパラメータの数はいくつか。</li>
+        <p class="suushiki"><span id="test"><input type="checkbox" id="blank104"><label for="blank104">　\( (784 \times 16) + (16 \times 16) + (16 \times 10) + 16 + 16 + 10 = 13,002 \)　</label></span></p>
 
-        <li></li>
-        <p><span id="test"><input type="checkbox" id="blank105"><label for="blank105">　　</label></span></p>
+            <div class="photo2">
+                <li>次の図に示すニューラルネットワークにおいて、Layer 1 の 0 番目のニューロンの出力値\( a_{0}^{(1)} \)において</li>
+                <img class="photo1" src="レイヤー.png" alt="レイヤーの問題画像">
+                <p class="text1"><span id="test"><input type="checkbox" id="blank105"><label for="blank105">　　</label></span></p>
+            </div>
 
         <li>ニューラルネットワークの活性化関数として使用される ReLU 関数を表したものはどれか。また、シグモイド関数を表したものはどれか。記号で答えよ。</li>
         <p></p>
