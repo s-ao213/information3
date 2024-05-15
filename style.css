@@ -109,6 +109,15 @@ tr#tl {
         
     }
 
+    .photo4{
+        width: 200px;
+        height: 100px;
+    }
+
+    .photo3{
+        width: 200px;
+        height: 150px;
+    }
     .suushiki{
         font-size: 10px;
     }
@@ -120,6 +129,16 @@ tr#tl {
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .photo4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .photo3{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 /* タブレット (670-960px) */
@@ -127,6 +146,16 @@ tr#tl {
     body{
         padding-left: 15%;
         padding-right: 15%;
+    }
+
+    .photo4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .photo3{
+        width: 400px;
+        height: 300px;
     }
     }
 
