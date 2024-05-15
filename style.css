@@ -170,6 +170,16 @@ tr#tl {
         width: 750px;
         height: 600px;
     }
+
+    .photo4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .photo3{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 /* モニター等 (1280px以上) */
